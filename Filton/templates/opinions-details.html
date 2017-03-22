@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block naslov %}
+Filton Hotels | Your Opinions / Details
+{% endblock naslov %}
+
+{% block vsebina %}
+
+
+<br>
+{{ opinion.time }} - {{ opinion.first_last_name }} - {{ opinion.email }} - {{ opinion.opinion }}
+<br>
+
+{% endblock vsebina %}

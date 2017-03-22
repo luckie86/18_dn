@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block naslov %}
+Filton Hotels | Your Opinions
+{% endblock naslov %}
+
+{% block opinions %}
+class="active"
+{% endblock opinions %}
+
+{% block vsebina %}
+
+{% for opinion in opinions %}
+<br>
+<a href="/opinions-details/{{ opinion.key.id() }}"> link </a>
+ {{ opinion.opinion }}
+<br>
+{% endfor %}
+
+{% endblock vsebina %}
